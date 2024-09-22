@@ -1,17 +1,19 @@
 import turtle
 
 def movew():
+    turtle.setheading(90)
     turtle.forward(50)
     turtle.stamp()
 def movea():
-    turtle.left(90)
+    turtle.setheading(180)
     turtle.forward(50)
     turtle.stamp()
 def moves():
-    turtle.forward(-50)
+    turtle.setheading(270)
+    turtle.forward(50)
     turtle.stamp()
 def moved():
-    turtle.right(90)
+    turtle.setheading(0)
     turtle.forward(50)
     turtle.stamp()
 
@@ -26,4 +28,7 @@ turtle.onkey(movea, 'a')
 turtle.onkey(moves, 's')
 turtle.onkey(moved, 'd')
 turtle.onkey(esc,'Escape')
+
+turtle.setheading(0)
+turtle.stamp()
 turtle.listen()
